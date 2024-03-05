@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea name="texto" class="texto" id="texto" cols="30" rows="10" onkeyup="minusculas(this);" placeholder="Ingresa el texto aquí"></textarea>
+
+        <div class="terminos">
+          <p>Solo letras minúsculas y sin acentos.</p>
+        </div>
+        <div class="botones">
+          <input type="button" class="btn-encriptar" value="Encriptar" onclick="encriptar()"/>
+          <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()"/>
+          <input type="button" id="btn-copiar" class="btn-copiar" value="Copiar" onclick="copiar()"/>
+        </div>
+
+      </div>
+      <div class="encriptado">
+        <img src="imagenes/muñeco.png" id="muñeco" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+          <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p class="copyright">© Copyright Francisco Javier S. - 2024</p>
+  </footer>
+
+  <ul>
+    <li><a href="https://github.com/JavierFSR?tab=repositories"><img src="imagenes/GitHub-Logo.png" id=github></a></li>
+    <li><a href="https://www.linkedin.com/in/javier-soto-0151b7278/"><img src="imagenes/linkedin.png" id=linkedin></a></li>
+  </ul>
+
+  <script src="app.js"></script>
+</html>
